@@ -42,10 +42,10 @@
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <div class="logo">
-        <h1><a href="index.html"><span>Invite.In</span></a></h1>
+      <div class="logo" style="display:flex; flex-direction:row;">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="{{ asset('dashboard/assets/img/logo.png') }}" alt="" class="img-fluid"></a>-->
+        <a href="index.html"><img src="{{ asset('/dashboard/images/logo-white.png') }}" style="height:60px; weidth:60px; padding-right:10px;" class="img-fluid"></a>
+        <h1 style="color:white;"><span>Invite.In</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -887,7 +887,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">Invite.In</a>
+        Designed by Invite.In</a>
       </div>
     </div>
   </footer><!-- End Footer -->

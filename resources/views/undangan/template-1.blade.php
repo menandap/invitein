@@ -73,16 +73,19 @@
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-2">
-					<div id="fh5co-logo">Invite.In<strong>.</strong></a></div>
+				<div class="col-xs-4" style="display:flex; flex-direction:row;">
+					<div id="fh5co-logo">Created by <strong>.</strong></a></div>
+					<img src="/dashboard/images/logo-white.png" style="height:45px; weidth:45px; padding-left:10px;">
 				</div>
-				<div class="col-xs-10 text-right menu-1">
+				<!-- <div class="col-xs-4">
+					
+				</div> -->
+				<div class="col-xs-8 text-right menu-1">
 					<ul>
 						<li class="active"><a href="#fh5co-couple">Home</a></li>
 						<li><a href="#fh5co-event">Event</a></li>
 						<li><a href="#fh5co-couple-story">Story</a></li>
 						<li><a href="#fh5co-gallery">Gallery</a></li>
-						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -493,8 +496,8 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+						<small class="block">&copy; 2022 Copyright Invite.In. All Rights Reserved</small> 
+						<small class="block">Designed by Invite.In</small>
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">

@@ -39,6 +39,10 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return "sukses login, masih tahap maintenance";
 });
+Route::get('/mydashboard', function () {
+    return view('dashboard-usr.index');
+});
+
 
 // UNDANGAN
 Route::get('/view-undangan', function () {
