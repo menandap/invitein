@@ -41,6 +41,6 @@ Route::get('/home', function () {
 });
 
 // UNDANGAN
-Route::get('/undangan-1', function () {
+Route::get('/view-undangan', function () {
     return view('undangan.template-1');
 });
