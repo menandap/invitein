@@ -7,7 +7,7 @@
   <link href="{{ asset('dashboard/images/logo-black.png') }}" rel="icon">
 
   <title>
-    Admin - @yield('title')
+    User - @yield('title')
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />

@@ -10,39 +10,24 @@
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
           </div>
-
-          <ul class="navbar-nav  justify-content-end me-sm-4">   
-          
-            <li class="nav-item dropdown d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-body font-weight-bold px-0" id="dropdownProfileButton" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-bell me-sm-1"></i>
-                <span class="badge bg-danger"></span>
-                <span class="d-sm-inline d-none">Notifikasi</span>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end px-2 me-sm-n4" aria-labelledby="dropdownProfileButton">
-               
-                <li>
-                  
-                </li>
-               
-                    <li>
-                    <a href="#" class="dropdown-item btnunNotif" data-num="" >
-                        &nbsp;<small>Tidak ada notifikasi</small>
-                    </a>
-                    </li>
-                
-              </ul>
-          </ul>
-
           <ul class="navbar-nav  justify-content-end">            
 
             <li class="nav-item dropdown d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body font-weight-bold px-0" id="dropdownProfileButton" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-user me-sm-1"></i>
-             
+                <span class="d-sm-inline d-none">{{auth()->user()->name}}</span>
               </a>
-             
+              <ul class="dropdown-menu dropdown-menu-end px-2 me-sm-n4" aria-labelledby="dropdownProfileButton">
+                <li class="">
+                  <a class="dropdown-item border-radius-md" href="{{ route('logout') }}"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                      @csrf
+                    </form>
+                  </a>
+                </li>
+              </ul>
           </ul>
-
         </div>
       </div>

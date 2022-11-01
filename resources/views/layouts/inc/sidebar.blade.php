@@ -16,27 +16,11 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('admins/categories*') ? 'active bg-gradient-primary' : '' }} " href="/admin/categories">
-            <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">category</i>
-            </div>
-            <span class="nav-link-text ms-1">Categories</span>
-          </a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link text-dark {{ Request::is('admins/products*') ? 'active bg-gradient-primary' : '' }} " href="/admin/products">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">local_mall</i>
             </div>
-            <span class="nav-link-text ms-1">Products</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('admins/couriers*') ? 'active bg-gradient-primary' : '' }} " href="/admin/couriers">
-            <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">local_shipping</i>
-            </div>
-            <span class="nav-link-text ms-1">Couriers</span>
+            <span class="nav-link-text ms-1">Undangan</span>
           </a>
         </li>
         <li class="nav-item">
@@ -45,6 +29,14 @@
               <i class="material-icons opacity-10">local_grocery_store</i>
             </div>
             <span class="nav-link-text ms-1">Transactions</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark {{ Request::is('admins/categories*') ? 'active bg-gradient-primary' : '' }} " href="/admin/categories">
+            <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">category</i>
+            </div>
+            <span class="nav-link-text ms-1">My Account</span>
           </a>
         </li>           
       </ul>

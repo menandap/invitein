@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
+	<title>User - Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="{{ asset ('pages/images/icons/favicon.ico') }}"/>
+	<link href="{{ asset('dashboard/images/logo-black.png') }}" rel="icon">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('pages/vendor/bootstrap/css/bootstrap.min.css') }}">
 <!--===============================================================================================-->
@@ -51,21 +51,18 @@
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
+
+					@error('auth')
+                      <div class="invalid-feedback">
+                        {{ $message }}
+                      </div>
+                  	@enderror
 					
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							Login
 						</button>
 					</div>
-
-					<!-- <div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-						<a class="txt2" href="#">
-							Username / Password?
-						</a>
-					</div> -->
 
 					<div class="text-center p-t-136">
 						<a class="txt2" href="/register">
