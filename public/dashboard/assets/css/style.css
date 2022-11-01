@@ -126,7 +126,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  height: 100px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -139,7 +139,7 @@ h6 {
 
 #header.header-scrolled {
   background: rgba(3, 4, 38, 0.766);
-  height: 60px;
+  height: 80px;
 }
 
 #header .logo h1 {

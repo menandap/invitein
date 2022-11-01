@@ -11,6 +11,7 @@
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
+	<link href="{{ asset('dashboard/images/logo-black.png') }}" rel="icon">
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -346,7 +347,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-testimonial">
+	<!-- <div id="fh5co-testimonial">
 		<div class="container">
 			<div class="row">
 				<div class="row animate-box">
@@ -488,7 +489,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
