@@ -173,4 +173,19 @@ class UserDashboardController extends Controller
 
         return view('dashboard-usr.transactionlist', compact('transactions'));
     }
+
+    public function view_undangan(){
+        $users = Auth::guard('users')->user()->id;
+        $events = DB::table('events')
+        ->join('undangans', 'events.id_undangan', '=', 'undangans.id')
+        ->join('users', 'users.id', '=', 'undangans.id_user')
+        ->select('events.id', 'events.id_undangan', 'events.title', 'events.date_start', 'events.date_end', 'events.location', 'events.desc')
+        ->where('users.id', '=', $users)->paginate(5);
+
+        Paginator::useBootstrap();
+
+        // return $events;
+
+        return view('dashboard-usr.eventlist', compact('events'));
+    }
 }

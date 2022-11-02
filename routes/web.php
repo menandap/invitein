@@ -31,4 +31,5 @@ Route::get('/myevent/{id}/show', [UserDashboardController::class, 'event_show'])
 Route::get('/mytransaction', [UserDashboardController::class, 'transaction']);
 
 // UNDANGAN
-Route::view('/view-undangan', 'undangan.template-1')->name('view-undangan'); 
+Route::view('/viewundangan', 'undangan.template-1')->name('viewundangan'); 
+Route::get('/view-undangan', [UserDashboardController::class, 'view_undangan'])->name('view-undangan'); 
