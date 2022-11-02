@@ -37,12 +37,4 @@ class UserAuthController extends Controller
 
         return redirect()->route('login');
     }
-
-    public function tes(){
-        // $undangans = Undangan::all();
-
-        // return $undangans;
-
-        return view('dashboard-usr.index');
-    }
 }

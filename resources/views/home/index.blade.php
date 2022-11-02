@@ -52,6 +52,8 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Undangan</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Review</a></li>
+          <li><a class="nav-link scrollto" href="#team">Our Team</a></li>
           <li><a class="nav-link scrollto" href="/login">Login</a></li>
       </nav><!-- .navbar -->
 
@@ -139,9 +141,9 @@
     <section id="gallery" class="gallery">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Project</h2>
-          <p>Check our Invitation</p>
+        <div class="section-title" data-aos="fade-up" style="text-align:center">
+          <h3>Project</h3>
+          <p>Our Invitation Project</p>
         </div>
 
         <div class="row" data-aos="fade-left">
@@ -251,20 +253,20 @@
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
-      <div class="container d-flex align-items-center justify-content-between">
-
-        <div class="section-title" data-aos="fade-up">
+      <div class="container d-flex"  >
+      <div>
+        <div class="section-title" data-aos="fade-up" style="text-align:center">
           <h3>Team</h3>
           <p>Our Great Team</p>
         </div>
 
-        <div class="row" data-aos="fade-left">
+        <div class="row" data-aos="fade-left" style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center; align-item:center">
 
           <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="100">
               <div class="pic"><img src="{{ asset('dashboard/assets/img/team/team-0.jpg') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Ananda Prema</h4>
+                <h4>Gede Ananda Prema Putra</h4>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -294,7 +296,7 @@
             <div class="member" data-aos="zoom-in" data-aos-delay="300">
               <div class="pic"><img src="{{ asset('dashboard/assets/img/team/team-0.jpg') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Moch Raka</h4>
+                <h4>Moch Raka Fakhzikril</h4>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -304,6 +306,8 @@
               </div>
             </div>
           </div>
+
+      </div>
 
         </div>
       </div>
@@ -335,10 +339,6 @@
               &copy; 2022 Copyright <strong><span>Invite.In</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-              <!-- All the links in the footer should remain intact. -->
-              <!-- You can delete the links only if you purchased the pro version. -->
-              <!-- Licensing information: https://bootstrapmade.com/license/ -->
-              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
               Designed by Invite.In</a>
             </div>
           </div>

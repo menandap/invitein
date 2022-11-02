@@ -31,7 +31,7 @@
                                     <h2 class="mb-0">Undangan List</h2>
                                 </div>
                                 <div class="col-6 text-end align-items-center">
-                                    <a class="btn bg-gradient-success mb-0" href="/admin/couriers/create"><i class="material-icons text-sm">add</i>&nbsp;&nbsp;Add Courier</a>
+                                    <a class="btn bg-gradient-success mb-0" href="/admin/couriers/create"><i class="material-icons text-sm">add</i>&nbsp;&nbsp;Add Undangan</a>
                                 </div>
                             </div>
                             <br>                    
@@ -55,6 +55,7 @@
                                             <td><p class="text-md font-weight-normal mb-0">{{ $undangan->person_2_name }}</p></td>
                                             <td class="align-middle text-center">
                                                 <div class="d-flex align-items-center">
+                                                    <a href="" class="m-1 btn bg-gradient-info"><i class="material-icons text-sm me-2">visibility</i>View</a>
                                                     <a href="" class="m-1 btn bg-gradient-warning"><i class="material-icons text-sm me-2">edit</i>Edit</a>
                                                     <a href="" class="m-1 btn bg-gradient-danger" onclick="return confirm('Apa yakin ingin menghapus data ini?')"><i class="material-icons text-sm me-2">delete</i>Delete</a>
                                                 </div>

@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('mydashboard*') ? 'active bg-gradient-primary' : '' }} " href="/mydashboard">
+          <a class="nav-link text-dark {{ Request::is('mydashboard*') ? 'active bg-gradient-info' : '' }} " href="/mydashboard">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -16,27 +16,43 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('myundangan*') ? 'active bg-gradient-primary' : '' }} " href="/myundangan">
+          <a class="nav-link text-dark {{ Request::is('mytransactions*') ? 'bg-gradient-info' : '' }} " href="/admin/transactions">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">local_mall</i>
+              <i class="material-icons opacity-10">local_grocery_store</i>
+            </div>
+            <span class="nav-link-text ms-1">Transaksi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark {{ Request::is('myundangan*') ? 'active bg-gradient-info' : '' }} " href="/myundangan">
+            <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">card_giftcard</i>
             </div>
             <span class="nav-link-text ms-1">Undangan</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('admins/transactions*') ? 'active bg-gradient-primary' : '' }} " href="/admin/transactions">
+          <a class="nav-link text-dark {{ Request::is('myevent*') ? 'active bg-gradient-info' : '' }} " href="/myundangan">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">local_grocery_store</i>
+              <i class="material-icons opacity-10">event_note</i>
             </div>
-            <span class="nav-link-text ms-1">Transactions</span>
+            <span class="nav-link-text ms-1">Event</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('admins/categories*') ? 'active bg-gradient-primary' : '' }} " href="/admin/categories">
+          <a class="nav-link text-dark {{ Request::is('myguest*') ? 'bg-gradient-info' : '' }} " href="/admin/transactions">
+            <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">account_box</i>
+            </div>
+            <span class="nav-link-text ms-1">Tamu</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark {{ Request::is('admins/categories*') ? 'bg-gradient-info' : '' }} " href="/admin/categories">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">category</i>
             </div>
-            <span class="nav-link-text ms-1">My Account</span>
+            <span class="nav-link-text ms-1">Akun Saya</span>
           </a>
         </li>           
       </ul>

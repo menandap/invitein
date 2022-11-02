@@ -1598,21 +1598,21 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #010118;
+  background: #ffffff;
   padding: 0 0 30px 0;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 14px;
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  background: #010114;
-  color: #fff;
-  border-top: 4px solid #1acc8d;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-top: 4px solid #ffffff;
   text-align: center;
   padding: 30px 20px;
 }
@@ -1635,7 +1635,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #fff;
+  color: rgb(0, 0, 0);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1647,8 +1647,8 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #1acc8d;
-  color: #fff;
+  background: #05097a;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
