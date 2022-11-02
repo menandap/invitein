@@ -17,6 +17,12 @@ Route::view('/', 'home.index')->name('home');
 // DASHBOARD
 Route::view('/mydashboard', 'dashboard-usr.index')->name('dashboard'); 
 Route::get('/myundangan', [UserDashboardController::class, 'undangan']);
+Route::get('/myundangan/create', [UserDashboardController::class, 'create']);
+Route::post('/myundangan/store', [UserDashboardController::class, 'store']);
+Route::get('/myundangan/{id}/show', [UserDashboardController::class, 'show'])->name('undangandetail');
+Route::get('/myundangan/{id}/edit', [UserDashboardController::class, 'edit']);
+Route::post('/myundangan/{id}/update', [UserDashboardController::class, 'update']);
+Route::get('/myundangan/{id}/delete', [UserDashboardController::class, 'delete']);
 
 // UNDANGAN
 Route::view('/view-undangan', 'undangan.template-1')->name('view-undangan'); 

@@ -40,9 +40,9 @@
                                     <thead>
                                         <tr>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">No.</th>
-                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Title</th>
-                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Person 1 Name</th>
-                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Person 2 Name</th>
+                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Judul</th>
+                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Penggantin Pria</th>
+                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Penggantin Wanita</th>
                                             <th colspan="2" class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Action</th>            
                                         </tr>
                                     </thead>
@@ -55,7 +55,7 @@
                                             <td><p class="text-md font-weight-normal mb-0">{{ $undangan->person_2_name }}</p></td>
                                             <td class="align-middle text-center">
                                                 <div class="d-flex align-items-center">
-                                                    <a href="" class="m-1 btn bg-gradient-info"><i class="material-icons text-sm me-2">visibility</i>View</a>
+                                                    <a href="myundangan/{{$undangan->id}}/show" class="m-1 btn bg-gradient-info"><i class="material-icons text-sm me-2">visibility</i>View</a>
                                                     <a href="" class="m-1 btn bg-gradient-warning"><i class="material-icons text-sm me-2">edit</i>Edit</a>
                                                     <a href="" class="m-1 btn bg-gradient-danger" onclick="return confirm('Apa yakin ingin menghapus data ini?')"><i class="material-icons text-sm me-2">delete</i>Delete</a>
                                                 </div>
