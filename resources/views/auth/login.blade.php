@@ -52,11 +52,11 @@
 						</span>
 					</div>
 
-					@error('auth')
-                      <div class="invalid-feedback">
-                        {{ $message }}
-                      </div>
-                  	@enderror
+					@if ($message = Session::get('error'))
+						<div class="text-danger text-center">
+								{{ $message }}
+						</div>
+					@endif
 					
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">

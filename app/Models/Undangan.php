@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Undangan extends Model
 {
     use HasFactory;
+    protected $table = "undangans";
+    protected $fillable = [
+        'id_user',
+        'tittle',
+        'featured_image',
+        'person_1_name',
+        'person_2_name',
+        'desc_person_1',
+        'desc_person_2',
+        'desc_wedding',
+        'wedding_date',
+        'wedding_location'
+    ];
 }

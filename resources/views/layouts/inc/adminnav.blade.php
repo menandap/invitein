@@ -15,7 +15,7 @@
             <li class="nav-item dropdown d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body font-weight-bold px-0" id="dropdownProfileButton" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">{{auth()->user()->name}}</span>
+                <span class="d-sm-inline d-none">{{ Auth::guard('users')->user()->name }}</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-end px-2 me-sm-n4" aria-labelledby="dropdownProfileButton">
                 <li class="">
