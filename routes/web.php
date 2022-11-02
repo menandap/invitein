@@ -15,6 +15,7 @@ Route::post('/logout', [UserAuthController::class, 'logout'])->name('logout');
 Route::view('/', 'home.index')->name('home'); 
 
 // DASHBOARD
+
 Route::view('/mydashboard', 'dashboard-usr.index')->name('dashboard'); 
 Route::get('/myundangan', [UserDashboardController::class, 'undangan']);
 Route::get('/myundangan/{id}/show', [UserDashboardController::class, 'undangan_show'])->name('undangandetail');

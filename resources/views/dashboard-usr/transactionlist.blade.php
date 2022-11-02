@@ -40,22 +40,24 @@
                                     <thead>
                                         <tr>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">No.</th>
-                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Judul</th>
-                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Penggantin Pria</th>
-                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Penggantin Wanita</th>
+                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Undangan</th>
+                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Mulai</th>
+                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Berakhir</th>
+                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Keyword</th>
                                             <th colspan="2" class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Action</th>            
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($undangans as $undangan)
+                                        @foreach($transactions as $transaction)
                                         <tr>
-                                            <td><p class="text-md font-weight-normal mb-0">{{ $undangans->firstItem()+$loop->index }}</p></th>                
-                                            <td><p class="text-md font-weight-normal mb-0">{{ $undangan->title }}</p></td>
-                                            <td><p class="text-md font-weight-normal mb-0">{{ $undangan->person_1_name }}</p></td>
-                                            <td><p class="text-md font-weight-normal mb-0">{{ $undangan->person_2_name }}</p></td>
+                                            <td><p class="text-md font-weight-normal mb-0">{{ $transactions->firstItem()+$loop->index }}</p></th>
+                                            <td><p class="text-md font-weight-normal mb-0">{{ $transaction->id_undangan }}</p></td>                
+                                            <td><p class="text-md font-weight-normal mb-0">{{ $transaction->keyword}}</p></td>
+                                            <td><p class="text-md font-weight-normal mb-0">{{ $transaction->date_start }}</p></td>
+                                            <td><p class="text-md font-weight-normal mb-0">{{ $transaction->date_end }}</p></td>
                                             <td class="align-middle text-center">
                                                 <div class="d-flex align-items-center">
-                                                    <a href="myundangan/{{$undangan->id}}/show" class="m-1 btn bg-gradient-info"><i class="material-icons text-sm me-2">visibility</i>View</a>
+                                                    <a href="" class="m-1 btn bg-gradient-info"><i class="material-icons text-sm me-2">visibility</i>View</a>
                                                     <a href="" class="m-1 btn bg-gradient-warning"><i class="material-icons text-sm me-2">edit</i>Edit</a>
                                                     <a href="" class="m-1 btn bg-gradient-danger" onclick="return confirm('Apa yakin ingin menghapus data ini?')"><i class="material-icons text-sm me-2">delete</i>Delete</a>
                                                 </div>
@@ -65,7 +67,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            {{ $undangans->links() }}
+                            {{ $transactions->links() }}
                         </div>
                     </div>
                 </div>

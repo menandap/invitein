@@ -16,7 +16,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('mytransactions*') ? 'bg-gradient-info' : '' }} " href="/mytransactions">
+          <a class="nav-link text-dark {{ Request::is('mytransaction*') ? 'bg-gradient-info' : '' }} " href="/mytransaction">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">local_grocery_store</i>
             </div>
