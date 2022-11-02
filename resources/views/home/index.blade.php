@@ -148,30 +148,38 @@
 
         <div class="row" data-aos="fade-left">
 
-          <div class="col-6">
+          <div class="col-6 mb-5">
             <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
               <a href="{{ asset('dashboard/assets/img/gallery/Themes-1.png') }}" class="gallery-lightbox">
-                <img src="{{ asset('dashboard/assets/img/gallery/Themes-1.png') }}" alt="" class="img-fluid">
+                <img src="{{ asset('dashboard/assets/img/gallery/Themes-1.png') }}" style="width:600px; height:300px;" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
-          <div class="col-6">
+          <div class="col-6 mb-5">
             <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
               <a href="{{ asset('dashboard/assets/img/gallery/gallery-1.jpg') }}" class="gallery-lightbox">
-                <img src="{{ asset('dashboard/assets/img/gallery/gallery-1.jpg') }}" alt="" class="img-fluid">
+                <img src="{{ asset('dashboard/assets/img/gallery/Themes-2.png') }}" style="width:600px; height:300px;" alt="" class="img-fluid">
               </a>
             </div>
           </div>
-        </div>
 
-        <div class="col-6">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
-              <a href="{{ asset('dashboard/assets/img/gallery/Themes-4.png') }}" class="gallery-lightbox">
-                <img src="{{ asset('dashboard/assets/img/gallery/Themes-4.png') }}" alt="" class="img-fluid">
+          <div class="col-6 mb-5">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+              <a href="{{ asset('dashboard/assets/img/gallery/Themes-1.png') }}" class="gallery-lightbox">
+                <img src="{{ asset('dashboard/assets/img/gallery/Themes-3.jpg') }}" style="width:600px; height:300px;" alt="" class="img-fluid">
               </a>
             </div>
           </div>
+
+          <div class="col-6 mb-5">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+              <a href="{{ asset('dashboard/assets/img/gallery/gallery-1.jpg') }}" class="gallery-lightbox">
+                <img src="{{ asset('dashboard/assets/img/gallery/Themes-4.png') }}" style="width:600px; height:300px;" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -187,7 +195,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="{{ asset('dashboard/assets/img/testimonials/testimonials-0.jpg') }}" class="testimonial-img" alt="">
-                <h3>Saul & Goodman</h3>
+                <h3>Tes</h3>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
@@ -199,7 +207,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="{{ asset('dashboard/assets/img/testimonials/testimonials-0.jpg') }}" class="testimonial-img" alt="">
-                <h3>Sara & Wilsson</h3>
+                <h3>Tes</h3>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
@@ -211,7 +219,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="{{ asset('dashboard/assets/img/testimonials/testimonials-0.jpg') }}" class="testimonial-img" alt="">
-                <h3>Jena & Karl</h3>
+                <h3>Tes</h3>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
@@ -223,7 +231,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="{{ asset('dashboard/assets/img/testimonials/testimonials-0.jpg') }}" class="testimonial-img" alt="">
-                <h3>Matty & Brandon</h3>
+                <h3>Tes</h3>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
@@ -231,19 +239,6 @@
                 </p>
               </div>
             </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{{ asset('dashboard/assets/img/testimonials/testimonials-0.jpg') }}" class="testimonial-img" alt="">
-                <h3>John & Larson</h3>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
           </div>
           <div class="swiper-pagination"></div>
         </div>

@@ -16,7 +16,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('mytransactions*') ? 'bg-gradient-info' : '' }} " href="/admin/transactions">
+          <a class="nav-link text-dark {{ Request::is('mytransactions*') ? 'bg-gradient-info' : '' }} " href="/mytransactions">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">local_grocery_store</i>
             </div>
@@ -32,7 +32,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('myevent*') ? 'active bg-gradient-info' : '' }} " href="/myundangan">
+          <a class="nav-link text-dark {{ Request::is('myevent*') ? 'active bg-gradient-info' : '' }} " href="/myevent">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">event_note</i>
             </div>
@@ -40,7 +40,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('myguest*') ? 'bg-gradient-info' : '' }} " href="/admin/transactions">
+          <a class="nav-link text-dark {{ Request::is('myguest*') ? 'bg-gradient-info' : '' }} " href="/myguest">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">account_box</i>
             </div>
@@ -48,7 +48,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark {{ Request::is('admins/categories*') ? 'bg-gradient-info' : '' }} " href="/admin/categories">
+          <a class="nav-link text-dark {{ Request::is('admins/categories*') ? 'bg-gradient-info' : '' }} " href="/myaccount">
             <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">category</i>
             </div>

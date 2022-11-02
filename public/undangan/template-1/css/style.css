@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #000000;
+  color: #828282;
   background: #fff;
 }
 
@@ -1002,7 +1002,7 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
-  padding: 5em 0;
+  padding: 7em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1015,7 +1015,7 @@ form label {
   #fh5co-couple,
   #fh5co-gallery,
   .fh5co-section {
-    padding: 1em 0;
+    padding: 3em 0;
   }
 }
 

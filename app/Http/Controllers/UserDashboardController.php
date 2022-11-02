@@ -10,22 +10,37 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Pagination\Paginator;
 use App\Models\User;
 use App\Models\Undangan;
+use App\Models\Event;
+use Auth;
 
 class UserDashboardController extends Controller
 {
     public function undangan(){
-        $undangans = Undangan::paginate(5);
+        $users = Auth::guard('users')->user()->id;
+        $undangans = Undangan::where('id_user',$users)->paginate(5);
         Paginator::useBootstrap();
+
+        // return $users;
 
         return view('dashboard-usr.undanganlist', compact('undangans'));
     }
 
-    public function create(){
+    public function undangan_show($id){
+        $undangans = Undangan::where('id', '=', $id)->first();
+        // $image = DB::table('products')
+        //     ->join('product_images', 'products.id', '=', 'product_images.product_id')
+        //     ->select('product_images.*')
+        //     ->where($where)->get();
+        // return $undangans;
+        return view('dashboard-usr.undangandetail', compact('undangans'));
+    }
+
+    public function undangan_create(){
         $categories = Product_categories::all();
         return view('pages.admins.product.productcreate', compact('categories'));
     }
 
-    public function store(Request $request){
+    public function undangan_store(Request $request){
         $this->validate($request,[
             'product_name' => 'required|unique:products|max:100',
             'price' => 'required|numeric',
@@ -73,7 +88,7 @@ class UserDashboardController extends Controller
         return Redirect::to('/admin/products')->with(['success' => 'Berhasil menambahkan produk']);
     }
 
-    public function edit($id){
+    public function undangan_edit($id){
         $category = Product_categories::all();
         $categoryDetail = DB::table('product_category_details')
             ->select('category_id')
@@ -84,7 +99,7 @@ class UserDashboardController extends Controller
         return view('pages.admins.product.productedit', compact('category','categoryDetail','products'));
     }
 
-    public function update(Request $request, $id){
+    public function undangan_update(Request $request, $id){
         $this->validate($request,[            
             'price' => 'required|numeric',
             'weight' => 'required|numeric|min:0',
@@ -119,7 +134,7 @@ class UserDashboardController extends Controller
         return Redirect::to('/admin/products')->with(['success' => 'Berhasil mengedit produk']);
     }
 
-    public function delete($id){
+    public function undangan_delete($id){
         Product_category_details::where('product_id',$id)->delete();
         // Discounts::where('id_product',$id)->delete();
         Product_images::where('product_id',$id)->delete();
@@ -128,16 +143,24 @@ class UserDashboardController extends Controller
         return Redirect::to('/admin/products')->with(['error' => 'Berhasil menghapus produk']);
     }
 
-    public function show($id){
-        // $where = array('undangans.id' => $id);
-        $undangans = Undangan::where('id', '=', $id)->first();
-        // $image = DB::table('products')
-        //     ->join('product_images', 'products.id', '=', 'product_images.product_id')
-        //     ->select('product_images.*')
-        //     ->where($where)->get();
-        // return $undangans;
-        //dd($undangans->title);
-        return view('dashboard-usr.undangandetail', compact('undangans'));
+    public function event(){
+        $users = Auth::guard('users')->user()->id;
+        $events = DB::table('events')
+        ->join('undangans', 'events.id_undangan', '=', 'undangans.id')
+        ->join('users', 'users.id', '=', 'undangans.id_user')
+        ->select('events.id', 'events.id_undangan', 'events.title', 'events.date_start', 'events.date_end', 'events.location', 'events.desc')
+        ->where('users.id', '=', $users)->paginate(5);
+
+        Paginator::useBootstrap();
+
+        // return $events;
+
+        return view('dashboard-usr.eventlist', compact('events'));
+    }
+
+    public function event_show($id){
+        $events = Event::where('id', '=', $id)->first();
+        return view('dashboard-usr.eventdetail', compact('events'));
     }
 
 }

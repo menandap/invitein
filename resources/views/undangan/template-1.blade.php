@@ -101,8 +101,8 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Joefrey &amp; Sheila</h1>
-							<h2>We Are Getting Married</h2>
+							<h1>Nama1 &amp; Nama2</h1>
+							<h2>Acara Pernikahan Kami</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
 						</div>
@@ -116,9 +116,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Hello!</h2>
-					<h3>November 28th, 2016 New York, USA</h3>
-					<p>We invited you to celebrate our wedding</p>
+					<h2>Salam</h2>
+					<h3>23 Oktober 2022, Denpasar-Bali</h3>
+					<p>Kami mengundang anda untuk hadir pada ....</p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -127,8 +127,8 @@
 						<img src="../undangan/template-1/images/groom.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
-						<h3>Joefrey Mahusay</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<h3>Nama1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 					</div>
 				</div>
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -137,8 +137,8 @@
 						<img src="../undangan/template-1/images/bride.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-bride">
-						<h3>Sheila Mahusay</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<h3>Nama2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 				</div>
 			</div>
@@ -150,8 +150,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Our Special Events</span>
-					<h2>Wedding Events</h2>
+					<span>Acara Spesial Kami</span>
+					<h2>Rundown Acara</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -160,7 +160,7 @@
 						<div class="col-md-10 col-md-offset-1">
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Main Ceremony</h3>
+									<h3>Acara1</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
 										<span>4:00 PM</span>
@@ -168,15 +168,15 @@
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Monday 28</span>
-										<span>November, 2016</span>
+										<span>Senin 28</span>
+										<span>November, 2022</span>
 									</div>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Wedding Party</h3>
+									<h3>Acara2</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
 										<span>7:00 PM</span>
@@ -184,10 +184,10 @@
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Monday 28</span>
-										<span>November, 2016</span>
+										<span>Senin 28</span>
+										<span>November, 2022</span>
 									</div>
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 								</div>
 							</div>
 						</div>
@@ -201,9 +201,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>We Love Each Other</span>
-					<h2>Our Story</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<span>Kami Mencintai Satu Sama Lain</span>
+					<h2>Cerita Kami</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 				</div>
 			</div>
 			<div class="row">
@@ -213,11 +213,11 @@
 							<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">First We Meet</h3>
-									<span class="date">December 25, 2015</span>
+									<h3 class="timeline-title">Cerita1</h3>
+									<span class="date">Desember 25, 2015</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 								</div>
 							</div>
 						</li>
@@ -225,11 +225,11 @@
 							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">First Date</h3>
-									<span class="date">December 28, 2015</span>
+									<h3 class="timeline-title">Cerita2</h3>
+									<span class="date">Desember 28, 2015</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 								</div>
 							</div>
 						</li>
@@ -237,11 +237,11 @@
 							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">In A Relationship</h3>
-									<span class="date">January 1, 2016</span>
+									<h3 class="timeline-title">Cerita3</h3>
+									<span class="date">Januari 1, 2016</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 								</div>
 							</div>
 						</li>
@@ -255,97 +255,133 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Our Memories</span>
-					<h2>Wedding Gallery</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<span>Memori Yang Kami Habiskan</span>
+					<h2>Galeri Foto Kami</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-12">
-					<ul id="fh5co-gallery-list">
-						
+					<ul id="fh5co-gallery-list">	
 						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); "> 
-						<a href="images/gallery-1.jpg">
-							<div class="case-studies-summary">
-								<span>14 Photos</span>
-								<h2>Two Glas of Juice</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
-						<a href="#" class="color-2">
-							<div class="case-studies-summary">
-								<span>30 Photos</span>
-								<h2>Timer starts now!</h2>
-							</div>
-						</a>
-					</li>
+							<a href="images/gallery-1.jpg">
+								<div class="case-studies-summary">
+									<span>Foto</span>
+									<h2>Lorem Ipsum</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
+							<a href="#" class="color-2">
+								<div class="case-studies-summary">
+									<span>Foto</span>
+									<h2>Lorem Ipsum</h2>
+								</div>
+							</a>
+						</li>
 
-
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
-						<a href="#" class="color-3">
-							<div class="case-studies-summary">
-								<span>90 Photos</span>
-								<h2>Beautiful sunset</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-4.jpg); ">
-						<a href="#" class="color-4">
-							<div class="case-studies-summary">
-								<span>12 Photos</span>
-								<h2>Company's Conference Room</h2>
-							</div>
-						</a>
-					</li>
-
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg); ">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
 							<a href="#" class="color-3">
 								<div class="case-studies-summary">
-									<span>50 Photos</span>
-									<h2>Useful baskets</h2>
+									<span>Foto</span>
+									<h2>Lorem Ipsum</h2>
 								</div>
 							</a>
 						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-6.jpg); ">
-							<a href="#" class="color-4">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); "> 
+							<a href="images/gallery-1.jpg">
 								<div class="case-studies-summary">
-									<span>45 Photos</span>
-									<h2>Skater man in the road</h2>
+									<span>Foto</span>
+									<h2>Lorem Ipsum</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
+							<a href="#" class="color-2">
+								<div class="case-studies-summary">
+									<span>Foto</span>
+									<h2>Lorem Ipsum</h2>
 								</div>
 							</a>
 						</li>
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-7.jpg); ">
-							<a href="#" class="color-4">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
+							<a href="#" class="color-3">
 								<div class="case-studies-summary">
-									<span>35 Photos</span>
-									<h2>Two Glas of Juice</h2>
+									<span>Foto</span>
+									<h2>Lorem Ipsum</h2>
 								</div>
 							</a>
-						</li>
-
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg); "> 
-							<a href="#" class="color-5">
-								<div class="case-studies-summary">
-									<span>90 Photos</span>
-									<h2>Timer starts now!</h2>
-								</div>
-							</a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-9.jpg); ">
-							<a href="#" class="color-6">
-								<div class="case-studies-summary">
-									<span>56 Photos</span>
-									<h2>Beautiful sunset</h2>
-								</div>
-							</a>
-						</li>
+						</li>					
 					</ul>		
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- <div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Great Guest</span>
+					<h2>Wedding Events Guest</h2>
+				</div>
+			</div>
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-sm" style="background-color:black; z-index:999">
+							<div class="col-md-3 col-sm-3 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Mr. Gede Ananda Prema Putra</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Mr. Gede Ananda Prema Putra</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Mr. Gede Ananda Prema Putra</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Mr. Gede Ananda Prema Putra</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Mr. Gede Ananda Prema Putra</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Mr. Gede Ananda Prema Putra</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Mr. Gede Ananda Prema Putra</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Mr. Gede Ananda Prema Putra</h3>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-3 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Mr. Gede Ananda Prema Putra</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
 
 	<!-- <div id="fh5co-testimonial">
 		<div class="container">
@@ -399,9 +435,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
-	<div id="fh5co-services" class="fh5co-section-gray">
+	<!-- <div id="fh5co-services" class="fh5co-section-gray">
 		<div class="container">
 			
 			<div class="row animate-box">
@@ -452,13 +488,11 @@
 					</div>
 				</div>
 			</div>
-
-			
 		</div>
-	</div>
+	</div> -->
 
 
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(../undangan/template-1/images/img_bg_4.jpg);">
+	<!-- <div id="fh5co-started" class="fh5co-bg" style="background-image:url(../undangan/template-1/images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
