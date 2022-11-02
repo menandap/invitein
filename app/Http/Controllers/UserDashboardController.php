@@ -11,6 +11,7 @@ use Illuminate\Pagination\Paginator;
 use App\Models\User;
 use App\Models\Undangan;
 use App\Models\Event;
+use App\Models\Transaction;
 use Auth;
 
 class UserDashboardController extends Controller
@@ -163,4 +164,13 @@ class UserDashboardController extends Controller
         return view('dashboard-usr.eventdetail', compact('events'));
     }
 
+    public function transaction(){
+        $users = Auth::guard('users')->user()->id;
+        $transactions = Transaction::where('id_user',$users)->paginate(5);
+        Paginator::useBootstrap();
+
+        // return $users;
+
+        return view('dashboard-usr.transactionlist', compact('transactions'));
+    }
 }

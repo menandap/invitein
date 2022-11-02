@@ -73,13 +73,13 @@
                                 </div>
                                 <div class="row">                                         
                                     <div class="col-lg">
-                                        <label class="form-control-label">Foto Pengantin Pria</label>                                        
+                                        <label class="form-control-label">Foto Pengantin Pria (Rasio : 1X1)</label>                                        
                                         <div class="thumbnail">
                                             <img class="img-fluid-left img-thumbnail" src="{{ asset('dashboard/assets/img/team/team-0.jpg') }}" alt="light" style="width:200px; height:200px;">                                                                
                                         </div>
                                     </div>	
                                     <div class="col-lg">
-                                        <label class="form-control-label">Foto Pengantin Wanita</label>                                        
+                                        <label class="form-control-label">Foto Pengantin Wanita (Rasio : 1X1)</label>                                        
                                         <div class="thumbnail">
                                             <img class="img-fluid-left img-thumbnail" src="{{ asset('dashboard/assets/img/team/team-0.jpg') }}" alt="light" style="width:200px; height:200px;">                                                                
                                         </div>

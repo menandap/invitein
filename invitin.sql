@@ -34,24 +34,31 @@ CREATE TABLE `banks` (
 
 /*Data for the table `banks` */
 
-/*Table structure for table `event` */
+/*Table structure for table `events` */
 
-DROP TABLE IF EXISTS `event`;
+DROP TABLE IF EXISTS `events`;
 
-CREATE TABLE `event` (
+CREATE TABLE `events` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `undangan_id` bigint(20) unsigned NOT NULL,
+  `id_undangan` bigint(20) unsigned NOT NULL,
   `title` char(50) NOT NULL,
   `date_start` datetime NOT NULL,
   `date_end` datetime NOT NULL,
   `location` varchar(255) NOT NULL,
   `desc` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `pk_event` (`undangan_id`),
-  CONSTRAINT `pk_event` FOREIGN KEY (`undangan_id`) REFERENCES `undangans` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  KEY `pk_event` (`id_undangan`),
+  CONSTRAINT `pk_event` FOREIGN KEY (`id_undangan`) REFERENCES `undangans` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `event` */
+/*Data for the table `events` */
+
+insert  into `events`(`id`,`id_undangan`,`title`,`date_start`,`date_end`,`location`,`desc`,`created_at`,`updated_at`) values 
+(1,1,'Event1','2022-11-02 18:52:30','2022-11-03 18:52:32','bali','kwowowowow',NULL,NULL),
+(2,4,'Event2','2022-11-02 19:11:00','2022-11-03 19:11:01','bali','hahahha',NULL,NULL),
+(3,1,'Event3','2022-11-02 19:11:31','2022-11-03 19:11:33','jawa','xd',NULL,NULL);
 
 /*Table structure for table `failed_jobs` */
 
@@ -97,11 +104,13 @@ DROP TABLE IF EXISTS `images`;
 
 CREATE TABLE `images` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `undangan_id` bigint(20) unsigned NOT NULL,
+  `id_undangan` bigint(20) unsigned NOT NULL,
   `image_name` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `pk_image` (`undangan_id`),
-  CONSTRAINT `pk_image` FOREIGN KEY (`undangan_id`) REFERENCES `undangans` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  KEY `pk_image` (`id_undangan`),
+  CONSTRAINT `pk_image` FOREIGN KEY (`id_undangan`) REFERENCES `undangans` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `images` */
@@ -163,23 +172,25 @@ CREATE TABLE `personal_access_tokens` (
 
 /*Data for the table `personal_access_tokens` */
 
-/*Table structure for table `story` */
+/*Table structure for table `storys` */
 
-DROP TABLE IF EXISTS `story`;
+DROP TABLE IF EXISTS `storys`;
 
-CREATE TABLE `story` (
+CREATE TABLE `storys` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `id_undangan` bigint(20) unsigned NOT NULL,
   `title` char(50) NOT NULL,
   `date` date NOT NULL,
   `images` varchar(255) NOT NULL,
   `desc` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `pk_story` (`id_undangan`),
   CONSTRAINT `pk_story` FOREIGN KEY (`id_undangan`) REFERENCES `undangans` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `story` */
+/*Data for the table `storys` */
 
 /*Table structure for table `trx` */
 
@@ -187,8 +198,13 @@ DROP TABLE IF EXISTS `trx`;
 
 CREATE TABLE `trx` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `id_user` bigint(20) unsigned DEFAULT NULL,
-  `id_undangan` bigint(20) unsigned DEFAULT NULL,
+  `id_user` bigint(20) unsigned NOT NULL,
+  `id_undangan` bigint(20) unsigned NOT NULL,
+  `keyword` char(50) NOT NULL,
+  `date_start` date NOT NULL,
+  `date_end` date NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `pk_user` (`id_user`),
   KEY `pk_undangan` (`id_undangan`),
@@ -204,6 +220,7 @@ DROP TABLE IF EXISTS `undangans`;
 
 CREATE TABLE `undangans` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `id_user` bigint(20) unsigned NOT NULL,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `featured_image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `person_1_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -211,14 +228,20 @@ CREATE TABLE `undangans` (
   `desc_person_1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `desc_person_2` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `desc_wedding` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `wedding_date` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `wedding_date` datetime NOT NULL,
   `wedding_location` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  PRIMARY KEY (`id`),
+  KEY `pk_user_undangan` (`id_user`),
+  CONSTRAINT `pk_user_undangan` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `undangans` */
+
+insert  into `undangans`(`id`,`id_user`,`title`,`featured_image`,`person_1_name`,`person_2_name`,`desc_person_1`,`desc_person_2`,`desc_wedding`,`wedding_date`,`wedding_location`,`created_at`,`updated_at`) values 
+(1,6,'Undangan1','tes','nama1','nama2','data1','data2','skaskasas','2022-11-02 00:00:00','bali',NULL,NULL),
+(4,3,'Coba','tes','nama1','nama2','data1','data2','ksaskaks','2022-11-02 00:00:00','bali',NULL,NULL);
 
 /*Table structure for table `users` */
 
@@ -233,14 +256,15 @@ CREATE TABLE `users` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `users` */
 
 insert  into `users`(`id`,`name`,`email`,`password`,`created_at`,`updated_at`) values 
 (1,'Firman Kurniawan','kurniawan.firman94@gmail.com','$2y$10$NL0tlwGIV9Js/jCKPs9zneg9wl5eAqMBRTimelikdq1XS0yvMEJym','2022-10-10 12:33:23','2022-10-10 12:33:23'),
 (3,'demo','demo@gmail.com','$2y$10$YRj5rrePKlbJPz4RlZjIROP72q1e.7S03I02LU925yoe0kFpDL2PG','2022-10-12 13:37:30','2022-10-12 13:37:30'),
-(4,'Ananda Prema','anandaprema19@gmail.com','$2y$10$ShzIhbHz2QUf71wbuF7zmudN8ouGzobwN4xRajAaLyDHI4tC7iMxq','2022-10-15 15:10:07','2022-10-15 15:10:07');
+(4,'Ananda Prema','anandaprema19@gmail.com','$2y$10$ShzIhbHz2QUf71wbuF7zmudN8ouGzobwN4xRajAaLyDHI4tC7iMxq','2022-10-15 15:10:07','2022-10-15 15:10:07'),
+(6,'Tes','anandaprema185@gmail.com','$2y$10$6kHXEgbwHwHNEHv.nMcmZOJvkfG7i4QlYMqKt5Jl4yQJWXnaiEwim','2022-11-01 16:25:58','2022-11-01 16:25:58');
 
 /*Table structure for table `wishes` */
 

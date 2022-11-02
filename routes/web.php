@@ -25,7 +25,9 @@ Route::get('/myundangan/{id}/show', [UserDashboardController::class, 'undangan_s
 // Route::get('/myundangan/{id}/delete', [UserDashboardController::class, 'undangan_delete']);
 
 Route::get('/myevent', [UserDashboardController::class, 'event']);
-Route::get('/myevent/{id}/show', [UserDashboardController::class, 'event_show'])->name('undangandetail');
+Route::get('/myevent/{id}/show', [UserDashboardController::class, 'event_show'])->name('eventdetail');
+
+Route::get('/mytransaction', [UserDashboardController::class, 'transaction']);
 
 // UNDANGAN
 Route::view('/view-undangan', 'undangan.template-1')->name('view-undangan'); 

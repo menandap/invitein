@@ -21,11 +21,28 @@
                             <br>  
 
                             <div class="row">
-                                <div class="row">
+                            <div class="row">
+                                    @php
+                                        $undangans = App\Models\Undangan::where('id', '=', $events->id_undangan)->first();
+                                    @endphp
                                     <div class="col-lg">
                                         <div class="form-group">
-                                            <label class="form-control-label">Judul</label>
+                                            <label class="form-control-label">Undangan</label>
+                                            <input type="text" id="" class="form-control" value="{{ $undangans->title }}" disabled readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Nama Event</label>
                                             <input type="text" id="" class="form-control" value="{{ $events->title }}" disabled readonly>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Lokasi</label>
+                                            <input type="text" id="" class="form-control" value="{{ $events->location }}" disabled readonly>
                                         </div>
                                     </div>
                                 </div>
@@ -44,20 +61,13 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-control-label">Lokasi</label>
-                                            <input type="text" id="" class="form-control" value="{{ $events->location }}" disabled readonly>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg">
                                         <div class="form-group">
                                             <label class="form-control-label">Deskripsi</label>
-                                            <input type="text" id="" class="form-control" value="{{ $events->desc }}" disabled readonly>
+                                            <textarea class="form-control" id="" rows="5" disabled readonly>{{$events->desc}}</textarea>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
                             </div>
                         </div>
                     </div>

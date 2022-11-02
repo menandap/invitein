@@ -116,9 +116,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Salam</h2>
+					<h2>Kami Mengundang Anda</h2>
 					<h3>23 Oktober 2022, Denpasar-Bali</h3>
-					<p>Kami mengundang anda untuk hadir pada ....</p>
+					<p>Salam, kami harapkan anda untuk hadir pada ....</p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
