@@ -210,9 +210,13 @@ CREATE TABLE `trx` (
   KEY `pk_undangan` (`id_undangan`),
   CONSTRAINT `pk_undangan` FOREIGN KEY (`id_undangan`) REFERENCES `undangans` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `pk_user` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `trx` */
+
+insert  into `trx`(`id`,`id_user`,`id_undangan`,`keyword`,`date_start`,`date_end`,`created_at`,`updated_at`) values 
+(1,6,1,'coba','2022-11-02','2022-11-02',NULL,NULL),
+(2,6,4,'cek','2022-11-02','2022-11-02',NULL,NULL);
 
 /*Table structure for table `undangans` */
 
@@ -225,6 +229,8 @@ CREATE TABLE `undangans` (
   `featured_image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `person_1_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `person_2_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `person_1_image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `person_2_image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `desc_person_1` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `desc_person_2` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `desc_wedding` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -235,13 +241,14 @@ CREATE TABLE `undangans` (
   PRIMARY KEY (`id`),
   KEY `pk_user_undangan` (`id_user`),
   CONSTRAINT `pk_user_undangan` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `undangans` */
 
-insert  into `undangans`(`id`,`id_user`,`title`,`featured_image`,`person_1_name`,`person_2_name`,`desc_person_1`,`desc_person_2`,`desc_wedding`,`wedding_date`,`wedding_location`,`created_at`,`updated_at`) values 
-(1,6,'Undangan1','tes','nama1','nama2','data1','data2','skaskasas','2022-11-02 00:00:00','bali',NULL,NULL),
-(4,3,'Coba','tes','nama1','nama2','data1','data2','ksaskaks','2022-11-02 00:00:00','bali',NULL,NULL);
+insert  into `undangans`(`id`,`id_user`,`title`,`featured_image`,`person_1_name`,`person_2_name`,`person_1_image`,`person_2_image`,`desc_person_1`,`desc_person_2`,`desc_wedding`,`wedding_date`,`wedding_location`,`created_at`,`updated_at`) values 
+(1,6,'Undangan1','tes','nama1','nama2','','','data1','data2','skaskasas','2022-11-02 00:00:00','bali',NULL,NULL),
+(4,3,'Coba','tes','nama1','nama2','','','data1','data2','ksaskaks','2022-11-02 00:00:00','bali',NULL,NULL),
+(5,7,'tes1','tes','nama1','nama1','','','data1','data2','kakaka','2022-11-04 21:36:21','bali',NULL,NULL);
 
 /*Table structure for table `users` */
 
@@ -256,7 +263,7 @@ CREATE TABLE `users` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `users` */
 
@@ -264,7 +271,8 @@ insert  into `users`(`id`,`name`,`email`,`password`,`created_at`,`updated_at`) v
 (1,'Firman Kurniawan','kurniawan.firman94@gmail.com','$2y$10$NL0tlwGIV9Js/jCKPs9zneg9wl5eAqMBRTimelikdq1XS0yvMEJym','2022-10-10 12:33:23','2022-10-10 12:33:23'),
 (3,'demo','demo@gmail.com','$2y$10$YRj5rrePKlbJPz4RlZjIROP72q1e.7S03I02LU925yoe0kFpDL2PG','2022-10-12 13:37:30','2022-10-12 13:37:30'),
 (4,'Ananda Prema','anandaprema19@gmail.com','$2y$10$ShzIhbHz2QUf71wbuF7zmudN8ouGzobwN4xRajAaLyDHI4tC7iMxq','2022-10-15 15:10:07','2022-10-15 15:10:07'),
-(6,'Tes','anandaprema185@gmail.com','$2y$10$6kHXEgbwHwHNEHv.nMcmZOJvkfG7i4QlYMqKt5Jl4yQJWXnaiEwim','2022-11-01 16:25:58','2022-11-01 16:25:58');
+(6,'Tes','anandaprema185@gmail.com','$2y$10$6kHXEgbwHwHNEHv.nMcmZOJvkfG7i4QlYMqKt5Jl4yQJWXnaiEwim','2022-11-01 16:25:58','2022-11-01 16:25:58'),
+(7,'Ananda Prema','bukuku@gmail.com','$2y$10$LROVQQetFXB.UIfo0sWr5u8zj9iMn7vrvL4tQ42BkKe3CW.xPgdFe','2022-11-04 13:34:01','2022-11-04 13:34:01');
 
 /*Table structure for table `wishes` */
 
