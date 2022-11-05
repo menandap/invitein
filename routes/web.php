@@ -32,4 +32,5 @@ Route::get('/mytransaction', [UserDashboardController::class, 'transaction']);
 
 // UNDANGAN
 Route::view('/viewundangan', 'undangan.template-1')->name('viewundangan'); 
+Route::view('/viewundangan-2', 'undangan.template-2');
 Route::get('/view-undangan', [UserDashboardController::class, 'view_undangan'])->name('view-undangan'); 
