@@ -95,7 +95,7 @@ class UserDashboardController extends Controller
         $events = DB::table('events')
         ->join('undangans', 'events.id_undangan', '=', 'undangans.id')
         ->join('users', 'users.id', '=', 'undangans.id_user')
-        ->select('events.id', 'events.id_undangan', 'events.title', 'events.date_start', 'events.date_end', 'events.location', 'events.desc')
+        ->select('events.id', 'events.id_undangan', 'events.title','events.date', 'events.date_start', 'events.date_end', 'events.location', 'events.desc')
         ->where('users.id', '=', $users)->paginate(5);
 
         Paginator::useBootstrap();
@@ -169,7 +169,7 @@ class UserDashboardController extends Controller
     public function see_undangan($id){
         // $users = Auth::user()->id;
         $undangan = Undangan::where('id', '=', $id)->first();
-        $event = Event::where('id_undangan', '=', $id)->first();
+        $event = Event::where('id_undangan', '=', $id)->get();
         // $events = DB::table('events')
         // ->join('undangans', 'events.id_undangan', '=', 'undangans.id')
         // ->select('events.id', 'events.id_undangan', 'events.title', 'events.date_start', 'events.date_end', 'events.location', 'events.desc')

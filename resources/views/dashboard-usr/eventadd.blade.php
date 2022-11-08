@@ -45,34 +45,42 @@
                                             <input type="text" name="location" id="" class="form-control">
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="input-group input-group-static mb-4">
-                                            <label class="form-control-label">Tanggal Mulai</label>
-                                            <input type="datetime-local" name="date_start" id="" class="form-control" placeholder="Masukkan Tanggal Mulai">
-                                        </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="input-group input-group-static mb-4">
-                                            <label class="form-control-label">Tanggal Berakhir</label>
-                                            <input type="datetime-local" name="date_end" id="" class="form-control" placeholder="Masukkan Tanggal Berakhir">
+                                </div> 
+                                <div class="row">
+                                    <div class="col-lg-4 mt-3">
+                                        <div class="input-group input-group-static mb-4">
+                                            <label class="form-control-label">Tanggal</label>
+                                            <input type="date" name="date" id="" class="form-control" placeholder="Masukkan Tanggal">
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg">
-                                            <div class="input-group input-group-static mb-4">
-                                                <label class="form-control-label">Deskripsi</label>
-                                                <textarea class="form-control" name="desc" id="" rows="3"></textarea>
-                                            </div>
+                                    <div class="col-lg-4 mt-3">
+                                        <div class="input-group input-group-static mb-4">
+                                            <label class="form-control-label">Mulai</label>
+                                            <input type="time" name="date_start" id="" class="form-control" placeholder="Masukkan Waktu Mulai">
                                         </div>
                                     </div>
+                                    <div class="col-lg-4 mt-3">
+                                        <div class="input-group input-group-static mb-4">
+                                            <label class="form-control-label">Berakhir</label>
+                                            <input type="time" name="date_end" id="" class="form-control" placeholder="Masukkan Waktu Berakhir">
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="row">
                                     <div class="col-lg">
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-success">
-                                                Submit
-                                            </button>
+                                        <div class="input-group input-group-static mb-4">
+                                            <label class="form-control-label">Deskripsi</label>
+                                            <textarea class="form-control" name="desc" id="" rows="3"></textarea>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                             </form>
                         </div>

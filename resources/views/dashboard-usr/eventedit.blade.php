@@ -51,16 +51,23 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-4 mt-3">
                                             <div class="input-group input-group-static mb-4">
-                                            <label class="form-control-label">Tanggal Mulai</label>
-                                            <input type="datetime-local" name="date_start" id="" class="form-control" placeholder="Masukkan Tanggal Mulai" value="{{$event->date_start}}">
+                                                <label class="form-control-label">Tanggal</label>
+                                                <input type="date" name="date" id="" class="form-control" placeholder="Masukkan Tanggal" value="{{$event->date}}">
+                                            </div>
                                         </div>
-                                        </div>
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-4 mt-3">
                                             <div class="input-group input-group-static mb-4">
-                                            <label class="form-control-label">Tanggal Berakhir</label>
-                                            <input type="datetime-local" name="date_end" id="" class="form-control" placeholder="Masukkan Tanggal Berakhir" value="{{$event->date_end}}">
+                                                <label class="form-control-label">Mulai</label>
+                                                <input type="time" name="date_start" id="" class="form-control" placeholder="Masukkan Waktu Mulai" value="{{$event->date_start}}">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <div class="input-group input-group-static mb-4">
+                                                <label class="form-control-label">Berakhir</label>
+                                                <input type="time" name="date_end" id="" class="form-control" placeholder="Masukkan Waktu Berakhir" value="{{$event->date_end}}">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">

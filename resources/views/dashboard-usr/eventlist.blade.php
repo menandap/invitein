@@ -42,6 +42,7 @@
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">No.</th>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Udangan</th>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Event</th>
+                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Tanggal</th>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Mulai</th>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Berakhir</th>
                                             <th colspan="2" class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Action</th>
@@ -56,6 +57,7 @@
                                             @endphp
                                             <td><p class="text-md font-weight-normal mb-0">{{ $undangans->title }}</p></td>
                                             <td><p class="text-md font-weight-normal mb-0">{{ $event->title }}</p></td>
+                                            <td><p class="text-md font-weight-normal mb-0">{{ $event->date }}</p></td>
                                             <td><p class="text-md font-weight-normal mb-0">{{ $event->date_start }}</p></td>
                                             <td><p class="text-md font-weight-normal mb-0">{{ $event->date_end }}</p></td>
                                             <td class="align-middle text-center">
