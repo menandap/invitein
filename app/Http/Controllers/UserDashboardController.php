@@ -32,18 +32,18 @@ class UserDashboardController extends Controller
     }
 
     public function undangan_show($id){
-        $undangans = Undangan::where('id', '=', $id)->first();
+        $undangan = Undangan::where('id', '=', $id)->first();
         // $image = DB::table('products')
         //     ->join('product_images', 'products.id', '=', 'product_images.product_id')
         //     ->select('product_images.*')
         //     ->where($where)->get();
         // return $undangans;
-        return view('dashboard-usr.undangandetail', compact('undangans'));
+        return view('dashboard-usr.undangandetail', compact('undangan'));
     }
 
     public function undangan_create(){
-        $undangan = Undangan::all();
-        return view('dashboard-usr.undanganadd', compact('undangan'));
+        // $undangan = Undangan::all();
+        return view('dashboard-usr.undanganadd');
     }
 
     public function undangan_store(Request $request){
@@ -111,7 +111,8 @@ class UserDashboardController extends Controller
     }
 
     public function event_create(){
-        $undangan = Undangan::all();
+        $users = Auth::user()->id;
+        $undangan = Undangan::where('id_user', '=', $users)->get();
         return view('dashboard-usr.eventadd', compact('undangan'));
     }
 
@@ -123,9 +124,15 @@ class UserDashboardController extends Controller
     }
 
     public function event_edit($id){
+        $users = Auth::user()->id;
         $event = Event::find($id);
-        $undangan = Undangan::all();
-        $undangan_select = Undangan::where('id', $id)->first();
+        $undangan = Undangan::where('id_user', '=', $users)->get();
+        $undangan_select = DB::table('events')
+        ->join('undangans', 'events.id_undangan', '=', 'undangans.id')
+        ->select('undangans.id', 'undangans.title')
+        ->where('events.id', '=', $id)->first();
+        // $undangan_select = Undangan::where('id_undangan', $id)->first();
+        // $users;
         return view('dashboard-usr.eventedit', compact('event', 'undangan', 'undangan_select'));
     }
 
@@ -145,27 +152,31 @@ class UserDashboardController extends Controller
     }
 
     public function transaction(){
-        $users = Auth::guard('users')->user()->id;
-        $transactions = Transaction::where('id_user',$users)->paginate(5);
-        Paginator::useBootstrap();
+        $users = Auth::user()->id;
+        // $users = Auth::guard('users')->user()->id;
+        // $transactions = Transaction::where('id_user',$users)->paginate(5);
+        // Paginator::useBootstrap();
 
-        // return $users;
+        $transactions = DB::table('trx')
+        ->join('undangans', 'trx.id_undangan', '=', 'undangans.id')
+        ->join('users', 'users.id', '=', 'undangans.id_user')
+        ->select('trx.id', 'trx.id_undangan', 'trx.keyword', 'trx.date_start', 'trx.date_end', 'undangans.title')
+        ->where('users.id', '=', $users)->paginate(5);
 
         return view('dashboard-usr.transactionlist', compact('transactions'));
     }
 
-    public function view_undangan(){
-        $users = Auth::guard('users')->user()->id;
-        $events = DB::table('events')
-        ->join('undangans', 'events.id_undangan', '=', 'undangans.id')
-        ->join('users', 'users.id', '=', 'undangans.id_user')
-        ->select('events.id', 'events.id_undangan', 'events.title', 'events.date_start', 'events.date_end', 'events.location', 'events.desc')
-        ->where('users.id', '=', $users)->paginate(5);
+    public function see_undangan($id){
+        // $users = Auth::user()->id;
+        $undangan = Undangan::where('id', '=', $id)->first();
+        $event = Event::where('id_undangan', '=', $id)->first();
+        // $events = DB::table('events')
+        // ->join('undangans', 'events.id_undangan', '=', 'undangans.id')
+        // ->select('events.id', 'events.id_undangan', 'events.title', 'events.date_start', 'events.date_end', 'events.location', 'events.desc')
+        // ->where('undangans.id', '=', $id)->get();
+        // return $events; 
+        // return $undangans;
 
-        Paginator::useBootstrap();
-
-        // return $events;
-
-        return view('dashboard-usr.eventlist', compact('events'));
+        return view('undangan.template_ananda', compact('undangan','event'));
     }
 }

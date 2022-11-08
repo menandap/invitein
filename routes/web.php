@@ -32,11 +32,20 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/myevent/{id}/edit', [UserDashboardController::class, 'event_edit']);
     Route::post('/myevent/{id}/update', [UserDashboardController::class, 'event_update']);
     Route::get('/myevent/{id}/delete', [UserDashboardController::class, 'event_delete']);
-});
 
-Route::get('/mytransaction', [UserDashboardController::class, 'transaction']);
+    Route::get('/mystory', [UserDashboardController::class, 'story']);
+    Route::get('/mystory/{id}/show', [UserDashboardController::class, 'story_show'])->name('storydetail');
+    Route::get('/mystory/create', [UserDashboardController::class, 'story_create']);
+    Route::post('/mystory/store', [UserDashboardController::class, 'story_store']);
+    Route::get('/mystory/{id}/edit', [UserDashboardController::class, 'story_edit']);
+    Route::post('/mystory/{id}/update', [UserDashboardController::class, 'story_update']);
+    Route::get('/mystory/{id}/delete', [UserDashboardController::class, 'story_delete']);
+
+    Route::get('/mytransaction', [UserDashboardController::class, 'transaction']);
+
+    Route::get('/seeundangan/{id}', [UserDashboardController::class, 'see_undangan'])->name('seeundangan');
+});
 
 // UNDANGAN
 Route::view('/viewundangan', 'undangan.template-1')->name('viewundangan');
 Route::view('/viewundangan-2', 'undangan.template-2');
-Route::get('/view-undangan', [UserDashboardController::class, 'view_undangan'])->name('view-undangan');
