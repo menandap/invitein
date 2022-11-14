@@ -276,7 +276,7 @@
             <div class="member" data-aos="zoom-in" data-aos-delay="200">
               <div class="pic"><img src="{{ asset('dashboard/assets/img/team/team-0.jpg') }}" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Firmansyah H. Kurniawan</h4>
+                <h4>Firmansyah Helmi Kurniawan</h4>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>

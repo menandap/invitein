@@ -6,7 +6,7 @@ use App\Http\Controllers\UserDashboardController;
 
 // AUTH
 Route::view('/login', 'auth.login')->name('login');
-Route::post('/actLogin', [UserAuthController::class, 'actLogin']);
+Route::post('/actLogin', [UserAuthController::class, 'actLogin'])->name('actLogin');
 Route::view('/register', 'auth.register')->name('register');
 Route::post('/actRegister', [UserAuthController::class, 'actRegister']);
 Route::post('/logout', [UserAuthController::class, 'logout'])->name('logout');
@@ -41,11 +41,24 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/mystory/{id}/update', [UserDashboardController::class, 'story_update']);
     Route::get('/mystory/{id}/delete', [UserDashboardController::class, 'story_delete']);
 
+    Route::get('/myimage/{id}/create', [UserDashboardController::class, 'image_create']);
+    Route::post('/myimage/{id}/store', [UserDashboardController::class, 'image_store']);
+    Route::get('/myimage/{id}/delete', [UserDashboardController::class, 'image_delete']);
+
+    Route::get('/myaccount', [UserDashboardController::class, 'account']);
+
     Route::get('/mytransaction', [UserDashboardController::class, 'transaction']);
+    Route::get('/mytransaction/{id}/show', [UserDashboardController::class, 'transaction_show'])->name('transactiondetail');
+    Route::get('/mytransaction/create', [UserDashboardController::class, 'transaction_create']);
+    Route::post('/mytransaction/store', [UserDashboardController::class, 'transaction_store']);
+    Route::get('/mytransaction/{id}/edit', [UserDashboardController::class, 'transaction_edit']);
+    Route::post('/mytransaction/{id}/update', [UserDashboardController::class, 'transaction_update']);
+    Route::get('/mytransaction/{id}/delete', [UserDashboardController::class, 'transaction_delete']);
+
 
     Route::get('/seeundangan/{id}', [UserDashboardController::class, 'see_undangan'])->name('seeundangan');
 });
 
 // UNDANGAN
-Route::view('/viewundangan', 'undangan.template-1')->name('viewundangan');
+Route::get('/viewundangan/{id}', [UserAuthController::class, 'view_undangan'])->name('viewundangan');
 Route::view('/viewundangan-2', 'undangan.template-2');

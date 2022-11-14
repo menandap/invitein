@@ -40,7 +40,7 @@
                                     <thead>
                                         <tr>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">No.</th>
-                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Udangan</th>
+                                            <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Undangan</th>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Event</th>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Tanggal</th>
                                             <th class="text-uppercase text-secondary text-lg font-weight-bolder ps-2">Mulai</th>
